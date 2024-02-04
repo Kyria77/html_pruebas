@@ -1,0 +1,422 @@
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-* ESTILOS GENERALES *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+@font-face {
+    font-family: Acme;
+    src: url(./../assets/fonts/Acme-Regular.ttf);
+}
+@font-face {
+    font-family: Lancelot;
+    src: url(./../assets/fonts/Lancelot-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    font-family:sans-serif, Verdana, Geneva, Tahoma;
+    font-size: 17px;
+    display: grid;
+    grid-template-areas: 
+    "myHeader"
+    "myNav"
+    "myMain"
+    "myFooter";
+    grid-template-rows: 110px 50px 1fr 170px;
+}
+header{
+    grid-area: myHeader;
+}
+nav{
+    grid-area: myNav;
+}
+main{
+    grid-area: myMain;
+}
+footer{
+    grid-area: myFooter;
+}
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* HEADER *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+header{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom, #12a3a9, black); 
+}
+.logo{
+    width: 90px;
+    height: 100px;
+}
+.nombreEmpresa{
+    width: 300px;
+    height: 110px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* NAVIGATION *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+nav{
+    width: 100%;
+    /* height: 50px; */
+}
+
+.navegationList{
+    padding: 15px 30px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Acme;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+}
+.navegationList a{
+    transition: 0.6s all;
+}
+.inn{
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: #12A3A9;
+    color: white;
+    font-weight:bolder;
+}
+.out{
+    padding: 10px 30px;
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    font-weight:bolder
+}
+.out:hover{
+    color: #f07575;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgba(205, 250, 248, 0.5);
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN INDEX *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+main{
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2ffe7;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(31, 167, 159, 0.5);
+    width: 20%;
+    padding: 30px 15px;
+}
+h1, h2, h3{
+    font-family: Lancelot;
+    letter-spacing: 0.7px;
+}
+h1{
+    font-size: 36px;
+    color: #66a32a;
+    padding: 10px 15px;
+}
+h2{
+    font-size: 30px;
+    color: #66a32a;
+    padding: 10px 15px;
+}
+h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: #5e6464;
+}
+.asideSolicitados{
+    padding: 7px 30px;
+    padding-bottom: 15px;
+    line-height: 30px;
+}
+.asideBoton{
+    width: 200px;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 3px 7px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+.asideEnlaces{
+    padding: 20px 35px;
+    list-style: none;
+}
+.asideEnlaces li{
+    margin: 30px 2px;
+}
+
+
+.sections{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 15px;
+}
+.backgroundSections{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+section{
+    margin: 10px 10px;
+    padding: 10px;
+}
+section > img{
+    padding: 20px;
+}
+p{
+    padding: 10px 20px;
+    line-height: 20px;
+    text-align: justify;
+}
+.bienvenida, .protagonistas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    width: 99%;
+    margin-bottom: 10px;
+}
+.bienvenida h1, .protagonistas h2{
+    width: 100%;
+}
+.bienvenida p, .protagonistas p{
+    width: 65%;
+    padding: 20px 30px;
+}
+.tlc, .juegos{
+    display: flex;
+    flex-direction: column;
+    width: 48.25%;
+}
+.tlc > img, .juegos > img{
+    /* padding-left: 150px; */
+    position: relative;
+    left: 14%;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN PRODUCTOS *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.galeria{
+    width: 78%;
+    margin: 1%;
+    padding: 10px;
+}
+.productos{
+    padding: 15px 20px;
+    display: grid;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    grid-template-rows: 170px 170px 170px 170px 170px;
+    grid-gap: 1rem;
+}
+.productos img{
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+}
+.productos img:hover{
+    width: 230px;
+    height: 175px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN PRESUPUESTO *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.presupuesto{
+    list-style: none;
+    padding-top: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.presupuesto li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.presupuesto > li:not(:last-child){
+    margin-bottom: 20px;
+}
+.presupuesto li label{
+    padding: 8px;
+    font-weight:500;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+.presupuesto > li > label + *{
+    flex: 1 0 220px;
+}
+.presupuesto li input, .presupuesto li textarea{
+    outline: none;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+.presupuesto .formButtons button{
+    margin-left: auto;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #12A3A9;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.presupuesto .formButtons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* MAIN CONTACTO *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.contacto{
+    margin: 40px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+}
+.bold{
+    font-weight: bold;
+}
+.contacto p{
+    line-height: 25px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* FOOTER *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+footer{
+    width: 100%;
+    height: 170px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.redesSociales{
+    width: 25%;
+}
+.red{
+    padding: 10px 15px;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.red li{
+    padding: 5px 12px;
+}
+.legales{
+    width: 70%;
+    padding-right: 300px;
+}
+.legales p{
+    text-align: center;
+    line-height: 19px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* OTRAS PANTALLAS *-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+/*Pantalla de tablet*/
+@media (max-width:991px){
+
+    aside{
+        display: none;
+    }
+    .sections, .tlc, .juegos{
+        flex-direction: column;
+        width: 98%;
+    }
+    .bienvenida p, .protagonistas p{
+        width: auto;
+    }
+    .tlc, .juegos{
+        justify-content: center;
+    }
+
+    .galeria{
+        width: 98%;
+    }
+    .productos{
+        padding: 15px 20px;
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows: 170px 170px 170px 170px 170px 170px 170px;
+        grid-gap: 1rem;
+    }
+    .productos img:hover{
+        width: 100%;
+        height: 100%;
+    }
+    .contacto img{
+        width: 98%;
+    }
+    .redesSociales{
+        width: 45%;
+    }
+    .legales{
+        padding-right: 50px;
+    }
+    .legales p:last-child{
+        display: none;
+    }
+}
+/*Pantalla de móvil*/
+@media (max-width:580px){
+    body{
+        grid-template-rows: 110px 200px 1fr 220px;
+    }
+    .navegationList{
+        flex-direction: column;
+    }
+    .navegationList li{
+        margin: 10px 0px;
+    }
+    .tlc, .juegos{
+        justify-content:center;
+    }
+    .tlc > img, .juegos > img{
+        padding-left: 3px;
+        position: relative;
+        left: 4%;
+    }
+    footer{
+        flex-direction: column;
+        height: auto;
+    }
+    .redesSociales, .legales{
+        width: 100%;
+    }
+    .redesSociales h3{
+        display: none;
+    }
+}

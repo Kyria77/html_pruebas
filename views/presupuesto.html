@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIC TAC Recursos educativos</title>
+        <meta name="description" content="Página de venta de recursos educativos para todos los niveles">
+        <meta name="Author" content="Verónica Montero">
+        <meta name="keywords" content="Recursos educativos, LOMLE, educación">
+        <meta name="revisit-after" content="2 days">
+        <link rel="stylesheet" href="./../css/estilos.css">
+        <link rel="icon" type="image/png" href="./../favicon.png">
+    </head>
+    <body>
+        <!--Comenzamos con Header, nuestra cabecera con el logo y nombre de la empresa-->
+        <header>
+            <img src="./../assets/img/logo.png" class="logo" width="94" height="123" alt="microorganismo logo de la empresa" title="Logo">
+            <img src="./../assets/img/nombre_empresa.png" class="nombreEmpresa" width="315" height="118" alt="nombre empresa" title="TIC TAC Recursos educativos">
+        </header>
+        <!--Nuestro Menú o Barra de navegación-->
+        <nav class="navegation">
+            <ul class="navegationList">
+                <li><a class="out" href="./../index.html">INICIO</a></li>
+                <li><a class="out" href="./productos.html">PRODUCTOS</a></li>
+                <li><a class="inn" href="#">PRESUPUESTO</a></li>
+                <li><a class="out" href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <!--Comenzamos nuestro Main. Consta de dos partes: La barra lateral y el formulario para solicitar presupuesto-->
+        <main>
+            <!--Nuestra Barra lateral con ranking de productos, Botón y Enlaces relacionados-->
+            <aside>
+                <h3>Recursos más solicitados</h3> 
+                <ol class="asideSolicitados">
+                    <li>Línea Protagonistas STEAM</li>
+                    <li>Línea Juegos</li>
+                    <li>Línea Te lo cuento</li>
+                </ol>
+                <a href="./presupuesto.html" class="asideBoton">Solicitar presupuesto</a>
+                <h3>Enlaces de interés</h3>
+                <ul class="asideEnlaces">
+                    <li>
+                        <a href="https://educagob.educacionyfp.gob.es/inicio.html" target="_blank">
+                            <img src="./../assets/img/ministerioEducacion.jpg" width="167" height="167" alt="logo Ministerio educacion" title="Ministerio de educacion">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.educaciontrespuntocero.com/" target="_blank">
+                            <img src="./../assets/img/logoEducacion30.png" width="200" height="40" alt="logo Educacion 3.0" title="Educacion 3.0">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://educaixa.org/es/?utm_source=sc&utm_medium=cpc&utm_campaign=plan-editorial&utm_content=x&utm_term=660229&gad_source=1&gclid=EAIaIQobChMIooWG-6vpgwMVaIpoCR2kOAXOEAMYASAAEgKS7PD_BwE" target="_blank">
+                            <img src="./../assets/img/logoEducaixa.png" width="151" height="64" alt="logo EduCaixa" title="EduCaixa">
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!--Sección con nuestro formulario para solicitar presupuesto. Puesto "method="get" solo para poder realizar comprobaciones.-->
+            <section class="galeria backgroundSections">
+                <h1>Lo que imaginas es posible</h1>
+                <p>Si tienes alguna duda o algún proyecto en mente que te gustaría llevar a cabo, puedes rellenar el formulario con todas tus inquietudes, estaremos encantados de ponernos en contacto contigo y resolverlas. Tanto si necesitas conocer nuestra gama de productos, como si estás interesado/a en generar productos nuevos amoldados a tus necesidades, podremos hacer un estudio completamente gratuito. </p>
+                <form id="myForm" name="myForm" action="#" method="get" target="_self">
+                    <ul class="presupuesto">
+                        <li>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre  (requerido)" pattern="[A-Z a-z]{2,20}" title="Escribe solo letras" required>
+                        </li>
+                        <li>
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos  (requerido)" pattern="[A-Z a-z]{3,40}" title="Escribe solo letras" required>
+                        </li>
+                        <li>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" placeholder="Escribe tu@mail.com  (requerido)" pattern="[a-zA-z0-9_-.]+@[a-z0-9._-]+\.[a-z]{2, 4}" required>
+                        </li>
+                        <li>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono  (requerido)" pattern="[0-9]{9}" title="Escribe los 9 números de tu teléfono" required>
+                        </li>
+                        <li>
+                            <label for="mensaje">Solicite más información:</label>
+                            <textarea rows="5" id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje" required></textarea>
+                        </li>
+                        <li>
+                            <input type="checkbox" value="privacidad" id="privacidad" name="privacidad" required>
+                            <label for="privacidad">Acepto la Política de privacidad:</label>
+                        </li>
+                        <li class="formButtons">
+                            <button type="reset">Borrar</button>
+                            <button type="submit">Enviar</button>
+                        </li>
+                    </ul>                
+                </form>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="redesSociales">
+                <h3>Más inspiración en:</h3>
+                <ul class="red">
+                    <li>
+                        <a href="https://es-es.facebook.com/login.php/" title="Facebook" target="_blank">
+                            <img src="./../assets/img/facebook.png" width="56" height="56" alt="aplicacion facebook" title="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+                            <img src="./../assets/img/instagram.png" width="56" height="56" alt="aplicacion instagram" title="Instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.whatsapp.com/?lang=es_LA" title="WhatsApp" target="_blank">
+                            <img src="./../assets/img/whatsapp.png" width="60" height="60" alt="aplicacion whatsapp" title="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="legales">
+                <p>&copy; TIC TAC Recursos educativos Todos los derechos reservados</p>
+                <p>Aviso Legal | Política de Cookies | Política de Privacidad</p>
+                <p>Contáctanos:TIC TAC Recursos educativos<br>
+                    Calle Narváez, Nº 60 Madrid<br>
+                    Teléfono: 91-728 28 56<br>
+                    Teléfono móvil: 670 80 90 50</p>
+            </div>
+        </footer>
+    </body>
+</html>
